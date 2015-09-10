@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ThermalCamera", "ThermalCamera\ThermalCamera.cproj", "{B9C3190C-FF82-48C8-95E2-1D4A15D9B55D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9C3190C-FF82-48C8-95E2-1D4A15D9B55D}.Debug|AVR.ActiveCfg = Debug|AVR
+		{B9C3190C-FF82-48C8-95E2-1D4A15D9B55D}.Debug|AVR.Build.0 = Debug|AVR
+		{B9C3190C-FF82-48C8-95E2-1D4A15D9B55D}.Release|AVR.ActiveCfg = Release|AVR
+		{B9C3190C-FF82-48C8-95E2-1D4A15D9B55D}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
