@@ -1,16 +1,18 @@
-#include "uart.h"
+#include "config/conf_board.h"
+
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#include <conf_board.h>
 
 #include <stdlib.h>
+
+#include "include/uart.h"
 
 void uart_setup() {
 	#define USART_BAUDRATE 9600
 	#define BAUD_PRESCALE (((F_CPU/(USART_BAUDRATE*16UL)))-1)
 	
 	UCSR0B |= (1 << RXEN0) | (1 << TXEN0);   // Enable receiver and transmitter
-	UCSR0B |= (1 << RXCIE0);                 // Enable receiever interrupt
+	UCSR0B |= (1 << RXCIE0);                 // Enable receiver interrupt
 	UCSR0C |= (1 << UCSZ00) | (1 << UCSZ01); // 8 data bits, 1 stop bit
 	sei(); // enable interrupts
 	

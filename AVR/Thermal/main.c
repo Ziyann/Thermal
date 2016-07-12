@@ -1,16 +1,17 @@
-#include <asf.h>
+#include "config/conf_board.h"
 
 #include <avr/io.h>
 #include <util/delay.h>
 #include <stdint.h>
 #include <string.h>
+#include <avr/interrupt.h>
 
-#include "control.h"
-#include "i2c.h"
-#include "mlx90614.h"
-#include "pwm.h"
-#include "servo.h"
-#include "uart.h"
+#include "include/control.h"
+#include "include/i2c.h"
+#include "include/mlx90614.h"
+#include "include/pwm.h"
+#include "include/servo.h"
+#include "include/uart.h"
 
 int main(void)
 {
@@ -21,8 +22,8 @@ int main(void)
 	
 	i2c_init();
 	
-	pwm_set_pulse_duration(PIN_HORIZ_SERVO, HORIZ_SERVO_CENTER);
-	pwm_set_pulse_duration(PIN_VERT_SERVO, VERT_SERVO_CENTER);
+	servo_stabilize(PIN_HORIZ_SERVO);
+	servo_stabilize(PIN_VERT_SERVO);
 	
 	while (1) {
 		;

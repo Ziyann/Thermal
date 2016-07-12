@@ -5,9 +5,9 @@
 #include <avr/io.h>
 #include <util/twi.h>
 
-#include "i2c.h"
+#include "include/i2c.h"
 
-#define TWI_FREQ	50000L   // TWI bit rate
+#define TWI_FREQ	20000L   // TWI bit rate
 
 void i2c_init() {
 	// PORTC |= (1 << PC5);	// enable pull up on TWI clock line
