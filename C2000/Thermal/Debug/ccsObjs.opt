@@ -1,0 +1,1 @@
+"./control.obj" "./crc.obj" "./i2c.obj" "./led.obj" "./main.obj" "./mlx90614.obj" "./osc_comp.obj" "./pwm.obj" "./sci.obj" "./servo.obj" "../F28027.cmd" "../F2802x_Headers_nonBIOS.cmd" -l"C:/ti/controlSUITE/device_support/f2802x/v230/f2802x_common/lib/driverlib.lib" -llibc.a 
